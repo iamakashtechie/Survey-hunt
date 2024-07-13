@@ -1,4 +1,5 @@
 body {
+  width: 100%;
   background-color: #dad7ff;
   margin: 0;
   padding: 0;
@@ -19,7 +20,7 @@ header nav {
   width: 100vw;
   /* border: 2px solid black; */
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   /* gap: 40px; */
 }
@@ -116,7 +117,7 @@ body > .main .left .first {
   align-items: center;
   /* border: 2px solid black; */
   background-color: #ffffff;
-  width: 80%;
+  width: 75%;
   gap: 5px;
   padding: 20px;
   border-radius: 5px;
@@ -174,14 +175,25 @@ body > .main .left .second {
   align-items: center;
   /* border: 2px solid black; */
   background-color: #ffffff;
-  width: 80%;
+  width: 75%;
   gap: 5px;
   padding: 20px;
   border-radius: 5px;
 }
 
+body > .main .left .second hr {
+  border: none;
+  border-top: 2px solid #dfe3eb;
+  width: 100%;
+}
+
+body > .main .left .second > .heading {
+  font-weight: 700;
+  align-self: flex-start;
+}
+
 body > .main .left .second > .option {
-  border: 2px solid black;
+  /* border: 2px solid black; */
   width: 100%;
   height: 20px;
   display: flex;
@@ -192,15 +204,34 @@ body > .main .left .second > .option {
 }
 
 body > .main .left .second > .option > .text {
-    border: 2px solid black;
-    
+    /* border: 2px solid black; */
+    width: 100%;
 }
 
 body > .main .left .second > .option > .icon {
-  width: 15px;
+  width: 18px;
   height: 15px;
   border: 2px solid black;
-  border-radius: 50px;
+  border-radius: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body > .main .left .second > .option > .categoryName {
+  /* border: 2px solid black; */
+  width: 100%;
+}
+
+body > .main .left .second > .option > .count {
+  width: 25px;
+  height: 12px;
+  font-size: 0.7em;
+  font-weight: 600;
+  border: 1.5px solid #494949;
+  color: #494949;
+  background-color: #dfe3eb;
+  border-radius: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -299,9 +330,98 @@ body > .main main .post .button {
 body > .main .right {
   width: 20vw;
   height: auto;
+  /* background-color: #ffffff; */
+  /* border: 2px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+body > .main .right .employers {
+  width: 75%;
+  /* border: 2px solid black; */
   background-color: #ffffff;
-  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+body > .main .right .employers > .title {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 10px;
+}
+
+body > .main .right .employers > .title > span:first-child {
+  font-weight: 700;
+  align-self: flex-start;  
+}
+
+body > .main .right .employers > .title > span:nth-child(2) {
+  color: #3466f6;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+body > .main .right .employers .content {
+  width: 100%;
+  height: auto;
+  font-size: 0.9rem;
+}
+
+body > .main .right .employers hr {
+  border: none;
+  border-top: 2px solid #dfe3eb;
+  width: 100%;
+}
+
+body > .main .right .others {
+  width: 75%;
+  height: auto;
+  /* border: 2px solid black; */
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+body > .main .right .others > .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+  font-weight: 700;
+  align-self: flex-start;
+}
+
+body > .main .right .others > .option{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid black; */
+  width: 100%;
+  text-align: start;
+}
+
+body > .main .right .others > .option span{
+  width: 50%;
+  /* border: 2px solid black; */
+  font-size: 0.9rem;
+}
+
+body > .main .right .others hr {
+  border: none;
+  border-top: 2px solid #dfe3eb;
+  width: 100%;
 }
